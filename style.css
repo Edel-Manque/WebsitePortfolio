@@ -14,10 +14,13 @@
 :root{
 --bg-color:#FFFFFF;
 --second-color:#EDF3FB;
---text-color:#3a4163;
---menu-color:#ffa600;
+--text-color:#3E5C76;
+--menu-color:#748CAB;
 --third-color:#CBE3EF;
 --fourth-color:#5AA8D6;
+--btn-color:#1499adf5;
+--new-color:#162521;
+--new2-color:#FFBE86;
 
 }
 
@@ -40,9 +43,11 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);  
+    background: rgba(246, 245, 245, 0.95);  
     z-index:100;
-    box-shadow: 0 0 3px gray;
+    backdrop-filter: blur(30px);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    box-shadow: 0px 0px 20px var(--btn-color);
     
 }
  
@@ -79,7 +84,7 @@ section{
 }
 .logo{
     font-size:3.5rem;
-    color:var(--menu-color);
+    color:var(--new2-color);
     font-weight: 700;
     cursor: default;
     font-family: "Montserrat", sans-serif;
@@ -87,7 +92,7 @@ section{
 }
 
 .logo span{
-    color: var(--menu-color);
+    color: var(--new2-color);
     font-size:3.5rem;
     font-weight: 700;
     cursor: default;
@@ -97,7 +102,7 @@ section{
 
 .navbar a{
     font-size: 2rem;
-    color: var(--fourth-color);
+    color: var(--new-color);
     margin-left:4rem;
     font-weight: 450;
     font-family:'Poppins',sans-serif;
@@ -108,7 +113,7 @@ section{
 nav a.active
 {
 
-    color: var(--text-color);
+    color: var(--btn-color);
 }
 
 .Home {
@@ -146,7 +151,7 @@ nav a.active
     margin-bottom:2rem ;
 }
 
-span{
+.Home-content{
     padding-top: 0;
     font-size: 3rem;
     color: var(--fourth-color);
@@ -204,7 +209,8 @@ span{
     padding:1.5rem;
     color: var(--bg-color);
     border-radius: 50px;
-    background-color: var(--fourth-color);
+    background-color: var(--btn-color);
+    font-weight:600;
     
 }
 
@@ -213,6 +219,7 @@ span{
     color: var(--fourth-color);
     box-shadow: 0 0 2rem var(--fourth-color);
     transition: 0.7s ease-in;
+    
 }
 
 .Education{
@@ -249,7 +256,7 @@ section h1{
     position: relative;
     border-radius: 6px;
     font-size: 15px;
-    box-shadow: 0 0 10px var(--text-color);
+    box-shadow: 0 0 15px var(--fourth-color);
 }
 
 .left-container{
@@ -267,7 +274,7 @@ section h1{
     right: -40px;
     top:32px;
     z-index: 10;
-    box-shadow: 0 0 10px var(--fourth-color);
+    box-shadow: 0 0 15px  var(--btn-color);
 }
 
 .right-container img{
@@ -302,7 +309,7 @@ section h1{
 .text-box H2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--menu-color);
+    color: var(--new-color);
     cursor: default;
 }
 .text-box {
@@ -320,6 +327,7 @@ section h1{
 .text-box small{
     color:var(--text-color);
     display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 15px;
     font-size: 12px;
     cursor: default;
@@ -363,7 +371,7 @@ section h1{
 header .dropdown-menu{
     right: 2rem;
     width: 200px;
-    background:rgba(20, 153, 173, 0.961);
+    background:#1499adf5;
     position: absolute;
     top: 85px;
     line-height:65px;
@@ -381,7 +389,7 @@ header .dropdown-menu{
 
 
 header .dropdown-menu a{
-    color: var(--menu-color);
+    color: var(--new2-color);
     font-weight: 500; 
     position: relative; 
     
@@ -432,7 +440,121 @@ header .dropdown-menu a{
 
 .Skills {
     background-color: var(--third-color);
+    
 }
+
+
+.Work-container
+{   width: 75%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap :250px;;
+}
+
+.Work-container .cards
+{ 
+    background-color: var(--new2-color);  
+   border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+}
+
+.image-section {
+   height: 225px;
+   background-color: var(--bg-color);
+}
+
+.cards .image-sanpedro{
+    background-image:url(AUTOMOTIVE/Municipal/sanpedro.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:175px 175px;
+
+}
+
+.cards .image-b88{
+background-image: url(AUTOMOTIVE/CJB88.png);
+background-size:contain;
+background-repeat: no-repeat;
+background-position: center;
+background-size:175px 175px;
+}
+
+
+.auto-content h2{
+    color: var(--new-color);
+    font-size: 21px;
+    font-weight: 800;
+    font-family: "Monserrat", sans-serif;
+}
+
+.auto-content h3{
+    font-size: 16px;
+    font-weight:700;
+    color:var(--bg-color);
+    font-family: "Monserrat", sans-serif;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    
+}
+
+
+
+ 
+    
+
+.auto-content h4{
+    font-size: 10px;
+    font-weight: 600;
+    color:var(--bg-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+.auto-content{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+.auto-content a {
+    margin-top: 10px;
+    color: var(--bg-color);
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: var(--btn-color);
+    padding: 8px 15px;
+    border-radius:7px ;
+}
+
+.auto-content a:hover{
+    color: var(--btn-color);
+    background-color: var(--second-color);
+    box-shadow: 0 0 13px var(--btn-color);
+}
+
+.Work-automotive .sub-title{
+    font-size: 24px;
+    color: var(--btn-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Media Screen for Responsive width*/
 
@@ -485,5 +607,7 @@ header .dropdown-menu a{
    .toggle_btn{
     display: block;
    }
+
+
 
 }
