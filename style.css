@@ -310,8 +310,8 @@ section h1{
         
         height: 0;
     }
-    100%{r
-        height: 100%;
+    100%{
+        height:100%;
     }
 }
 .text-box H2{
@@ -617,9 +617,168 @@ font-family: 'Opensans', sans-serif;
    
 }
 
+/*Skills section*/
+.Skills .wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    flex-wrap: wrap;
+}
+
+.content-skills img {
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto; /* Center the image */
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content-skills{
+  
+  margin: 100px;
+  text-align: center;
+    
+}
+
+.content-skills h2{
+    font-size:20px;
+    text-align: center;
+}
+
+.content-skills p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--menu-color);
+}
 
 
 
+/*Contact Section*/
+
+.Contact{
+    background-color: var(--bg-colorr);
+
+}
+
+.Contact h2{
+    margin-bottom: 3rem;
+    color:#FAFAFF;
+}
+.Contact h2 span{
+    margin-bottom: 3rem;
+    color:var(--text-color);
+}
+.Contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.Contact form .input-box {
+ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Contact form .input-box input,
+.Contact form textarea
+{
+    
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--new-color);
+    background:#FAFAFF;
+    border-radius: 2rem;
+    border: 2px solid var(--text-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.Contact form .btn{
+    margin-top: 2rem;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 0;
+    background-color:var(--btn-color);
+  
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--bg-color);
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 30px;
+    transition: 0.3s ease-in-out;
+    margin-top: 40px;
+}
+
+.footer .social a:hover{
+    color: var(--bg-color);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--bg-color);
+    background-color: var(--btn-color);
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    
+    color: var(--third-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 2px solid var(--new2-color);
+    color: #FAFAFF;
+    transition: 0.6s ease-in-out;
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top:50px;
+    text-align: center;
+    font-size: 12px;
+    color: #FAFAFF;
+    margin-bottom: 40px;
+}
 
 
 /*Media Screen for Responsive width*/
@@ -695,7 +854,7 @@ font-family: 'Opensans', sans-serif;
 }
 
 .card{
-    width: 400px;
+    width: 350px;
     background-color: var(--bg-color);
     border-radius: 8px;
     overflow: hidden;
@@ -729,7 +888,7 @@ font-family: 'Opensans', sans-serif;
 }
 
 .card-it{
-    width: 400px;
+    width: 350px;
     background-color: var(--bg-color);
     border-radius: 8px;
     overflow: hidden;
@@ -772,4 +931,29 @@ font-family: 'Opensans', sans-serif;
     text-align: center;
 }
 
+.card-sales{
+    width: 350px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px var(--menu-color);
+    margin:20px;
+    
+}
+
+
+.footer .social a{
+    font-size: 25px;
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+    margin-top: 40px;
+}
 }
